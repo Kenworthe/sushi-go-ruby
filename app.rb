@@ -1,5 +1,5 @@
 require 'tty-prompt'
-require_relative "game/sushi_go.rb"
+require_relative "./game/sushi_go.rb"
 
 @prompt = TTY::Prompt.new
 
@@ -19,7 +19,7 @@ def main_menu
 end
 
 def choose_players
-	max_players = 4
+	max_players = 5
 	min_players = 2
 	options = [* min_players .. max_players].map(&:to_s) # Equivalent to: `arr.map {|a| a.to_s}`
 
