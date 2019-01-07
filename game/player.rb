@@ -1,23 +1,28 @@
 class Player
+	attr_accessor :position
+	attr_accessor :plate
+	attr_reader :name
+	attr_reader :is_human
 
-	def initialize(name = nil)
-
-		def get_random_name
-			return Random.rand(1000...9999).to_s
-		end
-
-		@position
-		@name = name === nil ? get_random_name : name
+	def initialize(name, position, is_human = true)
+		@name = name
+		@position = position
 		@score = 0
 		@plate = []
+		@pudding = []
+		@is_human = is_human
 	end
 
 	def print_self
 		p self
 	end
 
-	def add_to_plate(card)
-		@plate.push(card)
+	def take_card(card)
+		if card.name == "Pudding"
+			@pudding.push(card)
+		else
+			@plate.push(card)
+		end
 	end
 
 	def calculate_plate

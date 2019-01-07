@@ -6,12 +6,15 @@ require_relative "./game/sushi_go.rb"
 puts "Welcome to Sushi Go: Command Line Edition!\n"
 
 def main_menu
-	choice = @prompt.select("What do you want to do?", ["New Game", "Quit"])
+	choice = @prompt.select("Please select game mode: ", ["Single Player", "Multiplayer", "Quit"])
 
 	case choice
-	when "New Game"
-		puts "Great! Starting new game...\n"
+	when "Single Player"
+		puts "Great! Starting new game...\n\n"
 		choose_players
+	when "Multiplayer"
+		puts "Whoops. Multiplayer isn't implemented yet!\n\n"
+		main_menu
 	when "Quit"
 		puts "Goodbye!"
 		exit
@@ -24,6 +27,7 @@ def choose_players
 	options = [* min_players .. max_players].map(&:to_s) # Equivalent to: `arr.map {|a| a.to_s}`
 
 	players = @prompt.select("How many players?", options).to_i
+	puts "Starting a #{players}-player game..."
 
 	sushi_go = Sushi_Go.new(players)
 end

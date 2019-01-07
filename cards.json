@@ -2,85 +2,109 @@
 	"cards": [
 		{
 			"name": "Tempura",
-			"count": 14,
+			"type": "set",
+			"amountInDeck": 14,
 			"set": 2,
+			"count": 0,
 			"points": 5,
 			"description": ""
 		},
 		{
 			"name": "Sashimi",
-			"count": 14,
+			"type": "set",
+			"amountInDeck": 14,
 			"set": 3,
+			"count": 0,
 			"points": 10,
 			"description": ""
 		},
 		{
 			"name": "Egg Nigiri",
-			"count": 5,
+			"type": "set",
+			"amountInDeck": 5,
 			"set": 1,
+			"count": 0,
 			"points": 1,
 			"description": ""
 		},
 		{
 			"name": "Salmon Nigiri",
-			"count": 10,
+			"type": "set",
+			"amountInDeck": 10,
 			"set": 1,
+			"count": 0,
 			"points": 2,
 			"description": ""
 		},
 		{
 			"name": "Squid Nigiri",
-			"count": 5,
+			"type": "set",
+			"amountInDeck": 5,
 			"set": 1,
+			"count": 0,
 			"points": 3,
 			"description": ""
 		},
 		{
 			"name": "Dumpling",
-			"count": 14,
-			"set": 1,
+			"type": "count",
+			"amountInDeck": 14,
+			"count": 1,
+			"set": 0,
 			"points": [15, 10, 6, 3, 1],
 			"description": "Increases points the more Dumplings you have."
 		},
 		{
 			"name": "3 Maki",
-			"count": 8,
-			"set": 3,
-			"points": [3, 6],
+			"type": "rank",
+			"amountInDeck": 8,
+			"set": 0,
+			"count": 3,
+			"points": [6, 3],
 			"description": "Whoever has the most gets 6, whoever has the second most gets 3. Ties split points."
 		},
 		{
 			"name": "2 Maki",
-			"count": 12,
-			"set": 2,
-			"points": [3, 6],
+			"type": "rank",
+			"amountInDeck": 12,
+			"set": 0,
+			"count": 2,
+			"points": [6, 3],
 			"description": "Whoever has the most gets 6, whoever has the second most gets 3. Ties split points."
 		},
 		{
 			"name": "1 Maki",
-			"count": 6,
-			"set": 1,
-			"points": [3, 6],
+			"type": "rank",
+			"amountInDeck": 6,
+			"set": 0,
+			"count": 1,
+			"points": [6, 3],
 			"description": "Whoever has the most gets 6, whoever has the second most gets 3. Ties split points."
 		},
 		{
 			"name": "Pudding",
-			"count": 10,
-			"set": 1,
-			"points": [-6, 6],
+			"type": "rank",
+			"amountInDeck": 10,
+			"set": 0,
+			"count": 1,
+			"points": [6, -6],
 			"description": "Whoever has the most gets 6 points, whoever has the least loses 6 points. Ties split points."
 		},
 		{
 			"name": "Wasabi",
-			"count": 6,
-			"set": 1,
+			"type": "special",
+			"amountInDeck": 6,
+			"set": 0,
+			"count": 0,
 			"points": 0,
 			"description": "Triples the points of your next Nigiri."
 		},
 		{
 			"name": "Chopsticks",
-			"count": 4,
-			"set": 1,
+			"type": "special",
+			"amountInDeck": 4,
+			"set": 0,
+			"count": 0,
 			"points": 0,
 			"description": "Can trade Chopsticks from your plate for 2 cards."
 		}
