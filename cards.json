@@ -2,6 +2,7 @@
 	"cards": [
 		{
 			"name": "Tempura",
+			"icon": "1F364",
 			"type": "set",
 			"amountInDeck": 14,
 			"set": 2,
@@ -11,6 +12,7 @@
 		},
 		{
 			"name": "Sashimi",
+			"icon": "1F362",
 			"type": "set",
 			"amountInDeck": 14,
 			"set": 3,
@@ -20,6 +22,7 @@
 		},
 		{
 			"name": "Egg Nigiri",
+			"icon": "1F373",
 			"type": "set",
 			"amountInDeck": 5,
 			"set": 1,
@@ -29,6 +32,7 @@
 		},
 		{
 			"name": "Salmon Nigiri",
+			"icon": "1F420",
 			"type": "set",
 			"amountInDeck": 10,
 			"set": 1,
@@ -38,6 +42,7 @@
 		},
 		{
 			"name": "Squid Nigiri",
+			"icon": "1F420",
 			"type": "set",
 			"amountInDeck": 5,
 			"set": 1,
@@ -47,6 +52,7 @@
 		},
 		{
 			"name": "Dumpling",
+			"icon": "1F95F",
 			"type": "count",
 			"amountInDeck": 14,
 			"count": 1,
@@ -56,6 +62,7 @@
 		},
 		{
 			"name": "3 Maki",
+			"icon": "1F518",
 			"type": "rank",
 			"amountInDeck": 8,
 			"set": 0,
@@ -65,6 +72,7 @@
 		},
 		{
 			"name": "2 Maki",
+			"icon": "1F518",
 			"type": "rank",
 			"amountInDeck": 12,
 			"set": 0,
@@ -74,6 +82,7 @@
 		},
 		{
 			"name": "1 Maki",
+			"icon": "1F518",
 			"type": "rank",
 			"amountInDeck": 6,
 			"set": 0,
@@ -83,6 +92,7 @@
 		},
 		{
 			"name": "Pudding",
+			"icon": "1F36E",
 			"type": "rank",
 			"amountInDeck": 10,
 			"set": 0,
@@ -92,6 +102,7 @@
 		},
 		{
 			"name": "Wasabi",
+			"icon": "1F957",
 			"type": "special",
 			"amountInDeck": 6,
 			"set": 0,
@@ -101,6 +112,7 @@
 		},
 		{
 			"name": "Chopsticks",
+			"icon": "1F962",
 			"type": "special",
 			"amountInDeck": 4,
 			"set": 0,

@@ -1,9 +1,9 @@
 require_relative "card"
 
-class SetCard < Card
+class RankCard < Card
 
 	def calculate_points(plate)
-		@points
+		@points[0]
 		# amount_of_cards = plate.select{|card| card.name == @name}.length
 		# return (amount_of_cards / @set).floor * @points
 	end

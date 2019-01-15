@@ -3,7 +3,7 @@ require_relative "./game/sushi_go.rb"
 
 @prompt = TTY::Prompt.new
 
-puts "Welcome to Sushi Go: Command Line Edition!\n"
+puts "\n\u{1F363} Welcome to Sushi Go: Command Line Edition! \u{1F363}\n\n"
 
 def main_menu
 	choice = @prompt.select("Please select game mode: ", ["Single Player", "Multiplayer", "Quit"])
@@ -29,7 +29,7 @@ def choose_players
 	players = @prompt.select("How many players?", options).to_i
 	puts "Starting a #{players}-player game..."
 
-	sushi_go = Sushi_Go.new(players)
+	sushi_go = SushiGo.new(players)
 end
 
 main_menu

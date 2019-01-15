@@ -1,6 +1,7 @@
 class Player
 	attr_accessor :position
 	attr_accessor :plate
+	attr_accessor :score
 	attr_reader :name
 	attr_reader :is_human
 
