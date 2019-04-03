@@ -3,13 +3,13 @@ class Card
 	attr_reader :points
 
 	def initialize(card_json)
-		@name = card_json["name"]
-		@type = card_json["type"]
-		@set = card_json["set"]
-		@count = card_json["count"]
-		@points = card_json["points"]
-		@description = card_json["description"]
-		@icon = card_json["icon"]
+		@name = card_json['name']
+		@type = card_json['type']
+		@set = card_json['set']
+		@count = card_json['count']
+		@points = card_json['points']
+		@description = card_json['description']
+		@icon = card_json['icon']
 	end
 
 	def put_details

@@ -26,12 +26,18 @@ class Player
 		end
 	end
 
+	def clear_plate
+		@plate = []
+	end
+
 	def calculate_plate
 		total = 0
 
-		# TODO: Add logic to calculate card points here.
+		@plate.each do |card|
+			total += card.calculate_points
+		end
 
-		return total
+		total
 	end
 
 	def clear_plate

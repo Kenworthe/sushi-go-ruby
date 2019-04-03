@@ -29,7 +29,7 @@ class SushiGo
 
 		fill_conveyor_belt
 
-		puts "Starting Round #{@round}!"
+		puts "\nStarting Round #{@round}!"
 
 		while @conveyor_belt.values.all? {|arr| arr.length > 0} # Probably very inefficient... TODO: Find better way.
 
@@ -60,7 +60,7 @@ class SushiGo
 	end
 
 	def player_turn(current_player)
-		puts "#{current_player.name}\'s turn!"
+		puts "\n#{current_player.name}\'s turn!"
 		puts "#{current_player.name}\'s plate has: #{current_player.plate.map{|e| e.name}.join(',')}"
 
 		current_player_hand = @conveyor_belt[current_player.position]
@@ -80,8 +80,6 @@ class SushiGo
 			chosen_card = current_player_hand.delete_at(chosen_card_index)
 			current_player.plate.push(chosen_card)
 
-			puts "You chose: #{chosen_card.name}!"
-
 		else
 			# TODO: add AI logic to pick most value card.
 			choice = current_player_hand.delete_at(0)
@@ -90,7 +88,7 @@ class SushiGo
 
 	def empty_all_plates
 		@players.each do |player|
-			player.plate = []
+			player.clear_plate
 		end
 	end
 
@@ -102,7 +100,7 @@ class SushiGo
 				player.position += 1
 			end
 		end
-		puts "The conveyor belt has rotated!"
+		puts "\nThe conveyor belt has rotated!"
 	end
 
 	def add_player
