@@ -21,6 +21,7 @@ GEM
       tty-screen (~> 0.6.4)
       wisper (~> 2.0.0)
     tty-screen (0.6.5)
+    websocket (1.2.8)
     wisper (2.0.0)
 
 PLATFORMS
@@ -29,6 +30,7 @@ PLATFORMS
 DEPENDENCIES
   json
   tty-prompt
+  websocket
 
 BUNDLED WITH
    2.0.1

@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 
-gem 'tty-prompt'
 gem 'json'
+gem 'tty-prompt'
+gem 'websocket-eventmachine-server'
+gem 'websocket-eventmachine-client'

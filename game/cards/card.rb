@@ -1,6 +1,5 @@
 class Card
-	attr_reader :name
-	attr_reader :points
+	attr_reader :name, :icon, :points
 
 	def initialize(card_json)
 		@name = card_json['name']

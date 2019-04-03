@@ -73,7 +73,7 @@ class SushiGo
 
 			chosen_card_index = @prompt.select("Take your pick!") do |menu|
 				current_player_hand.each do |card|
-					menu.choice "#{card.name} \u{1F363}", current_player_hand.index(card)
+					menu.choice "#{card.name} #{card.icon}", current_player_hand.index(card)
 				end
 			end
 
