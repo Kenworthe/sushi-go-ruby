@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     equatable (0.5.0)
+    eventmachine (1.2.7)
     json (2.1.0)
     necromancer (0.4.0)
     pastel (0.7.2)
@@ -22,6 +23,15 @@ GEM
       wisper (~> 2.0.0)
     tty-screen (0.6.5)
     websocket (1.2.8)
+    websocket-eventmachine-base (1.2.0)
+      eventmachine (~> 1.0)
+      websocket (~> 1.0)
+      websocket-native (~> 1.0)
+    websocket-eventmachine-client (1.2.0)
+      websocket-eventmachine-base (~> 1.0)
+    websocket-eventmachine-server (1.0.1)
+      websocket-eventmachine-base (~> 1.0)
+    websocket-native (1.0.0)
     wisper (2.0.0)
 
 PLATFORMS
@@ -31,6 +41,8 @@ DEPENDENCIES
   json
   tty-prompt
   websocket
+  websocket-eventmachine-client
+  websocket-eventmachine-server
 
 BUNDLED WITH
    2.0.1
